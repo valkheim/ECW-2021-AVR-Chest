@@ -1,0 +1,34 @@
+Symmetric operations on the flag:
+
+- rotate buffer
+- xor buffer
+- traverse with a step of 2
+
+You can use generate.py to generate a crackme config:
+
+```
+$ python3 generate.py
+Corpus: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+Flag (in brackets): [s3ri4l_r3v3rse]
+Flag (in brackets): [ECW{s3ri4l_r3v3rse}]
+Flag (in brackets): [EyCiWT{esB3srKil4elr_dra3YvZ3jrrsCeo}F]
+XOR key: 14 or 0x0e
+Flag (in brackets): [KwMgYZuk}L=}|Egb:kb|Qj|o=WxT=d||}MkasH]
+ROT key: 1 or 0x01
+Flag (in brackets): [LxNhZ[vl~M>~}Fhc;lc}Rk}p>XyU>e}}~NlbtI]
+```
+
+Config:
+
+```
+$ cat config.mk
+CONFIG=-DFLAG="LxNhZ[vl~M>~}Fhc;lc}Rk}p>XyU>e}}~NlbtI"
+CONFIG+=-DXOR_KEY=0x0e
+CONFIG+=-DROT_KEY=0x01
+```
+
+You can test with `make test`. Tmux will open with the following screens:
+
+* running qemu
+* gdb breaking at 0
+* a telnet session on qemu for serial I/O

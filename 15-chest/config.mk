@@ -1,0 +1,3 @@
+CONFIG=-DFLAG="LsNuZbvw:4lqnck4iL=Q:_9%t^"
+CONFIG+=-DXOR_KEY=0xe
+CONFIG+=-DROT_KEY=0x1

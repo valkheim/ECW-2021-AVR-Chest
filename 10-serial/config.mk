@@ -1,0 +1,3 @@
+CONFIG=-DFLAG="P_J]^grMzf:Py]d[?jgLVJyQ:D}z:~yqz?pYx@"
+CONFIG+=-DXOR_KEY=0x0a
+CONFIG+=-DROT_KEY=0x01
