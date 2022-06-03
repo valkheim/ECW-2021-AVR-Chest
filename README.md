@@ -1,6 +1,6 @@
 # ECW 2021 - Chest
 
-**Chest** was the one of the reverse-engineering challenge of the [European Cyber Week](https://www.european-cyber-week.eu/) 2021 challenges designed by Thalium.
+**Chest** was one of the reverse-engineering challenge of the [European Cyber Week](https://www.european-cyber-week.eu/) 2021 challenges designed by Thalium.
 
 The provided file `chest.hex` file is in [Intel HEX format](https://www.intel.com/content/www/us/en/support/programmable/articles/000076770.html).
 
